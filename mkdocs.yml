@@ -1,19 +1,43 @@
-site_name: "Документация"
+site_name: My Documentation
 theme:
   name: material
-  features:
-    - navigation.tabs
-    - navigation.indexes
-    - navigation.sections
-    - navigation.top
-    - toc.follow
-    - content.code.copy
-    - content.tabs.link
-    - version-dropdown  # Добавляет переключатель версий
-extra:
-  version:
-    provider: mike  # Используем mike для управления версиями
+
+  language: ru
+
+nav:
+  - Home: docs/index.md
+  - Version 1.0:
+      - Overview: docs-v1.0/docs/index.md
+  - Version 2.0:
+      - Overview: docs-v2.0/docs/index.md
+
+docs_dir: docs  
 
 plugins:
   - search
   - mike
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+
+# site_name: "Документация"
+# theme:
+#   name: material
+#   features:
+#     - navigation.tabs
+#     - navigation.indexes
+#     - navigation.sections
+#     - navigation.top
+#     - toc.follow
+#     - content.code.copy
+#     - content.tabs.link
+#     - version-dropdown  # Добавляет переключатель версий
+# extra:
+#   version:
+#     provider: mike  # Используем mike для управления версиями
+
+# plugins:
+#   - search
+#   - mike
