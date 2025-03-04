@@ -1,8 +1,0 @@
-site_name: My Docs
-theme:
-  name: material
-
-nav:
-  - Главная: index.md
-  - Статьи:
-      - "Первая статья": article1.md
