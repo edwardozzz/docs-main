@@ -1,6 +1,19 @@
-site_name: My Docs
+site_name: "Документация"
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.tabs.link
+    - version-dropdown  # Добавляет переключатель версий
 extra:
   version:
-    provider: mike
+    provider: mike  # Используем mike для управления версиями
+
+plugins:
+  - search
+  - mike
